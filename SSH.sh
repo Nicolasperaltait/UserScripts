@@ -16,5 +16,5 @@ sudo service ssh start
 sudo ufw allow ssh
 
 sudo systemctl status ssh
-#test
+
 #=======================================================================================#
