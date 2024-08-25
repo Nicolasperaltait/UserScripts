@@ -1,6 +1,6 @@
-# Inicial Script For servers startup
-
 #!/bin/bash
+
+# Inicial Script For servers startup
 
 # privilege upgrade
 su root && 
