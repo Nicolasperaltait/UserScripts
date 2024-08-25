@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# Inicial Script For servers startup
-
-# privilege upgrade
-su root && 
+# Inicial Script For servers startup // need to ve root and bash 
+ 
 apt update && apt upgrade -y
 apt-get install sudo &&
 sudo usermod -a -G sudo nicolas
@@ -31,8 +29,6 @@ apt install ufw clamav clamav-daemon git wget curl zsh htop preload -y &&
     sudo systemctl start clamav-daemon                                     # Iniciar de nuevo el daemon de actualización de ClamAV
 
 # ZSH + OhMyZsh
-
-bash
 
 echo "y" | sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
