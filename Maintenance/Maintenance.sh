@@ -32,6 +32,14 @@ echo " --------------- AV scan --------------- "
 
 #echo " --------------- BKP Configs - Esto puede tardar un tiempo --------------- "
 
-#  sudo cp .config -p -f -r /media/nicolas/Almacen/01-Cloud/06-DebianDotFiles
 
-echo "--------------- Ya podes cerrar la terminal --------------- "
+
+# sudo cp .config -p -f -r /media/nicolas/Almacen/01-Cloud/06-DebianDotFiles
+
+    # -p: Preserva los atributos originales del archivo (modo, propiedad, timestamps)
+    # -f: Fuerza la copia, sobrescribiendo archivos existentes sin preguntar
+    # -r: Copia recursivamente, incluyendo subdirectorios y su contenido
+
+#Descomentar para ejecutar un BKP automatico 
+
+echo " --------------- Ya podes cerrar la terminal --------------- "
