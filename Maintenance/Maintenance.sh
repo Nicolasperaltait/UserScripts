@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Paquetes necesarios: apt, clamav, clamav-daemon 
 sudo apt update && sudo apt upgrade -y && sudo apt install ufw clamav clamav-daemon -y 
 
