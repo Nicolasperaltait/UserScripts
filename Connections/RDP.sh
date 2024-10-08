@@ -9,7 +9,5 @@ sudo systemctl restart xrdp &&                                                  
 
 sudo ufw allow 3389 &&                                                                  # Permitimos el acceso al puerto 3389 desde cualquier lugar. // NO SEGURO!!!!  
 
-sudo systemctl status xrdp &&                                                           # Verificamos el estado del servicio xrdp                                                                     # Permitimos el acceso al puerto 3389 desde cualquier lugar. // NO SEGURO!!!!          
-                
-echo "Reinicie el sistema para que los cambios tengan efecto."
+sudo systemctl status xrdp &&                                                           # Verificamos el estado del servicio xrdp                                                                     # Permitimos el acceso al puerto 3389 desde cualquier lugar. // NO SEGURO!!!!
  
