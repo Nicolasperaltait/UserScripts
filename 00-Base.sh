@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "you need to be root"
 
 # Inicial Script For servers startup // need to ve root and bash 
  
