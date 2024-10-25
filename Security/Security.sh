@@ -2,7 +2,7 @@
 sudo apt update && sudo apt upgrade -y && sudo apt install ufw clamav clamav-daemon -y
 
 #  Firewall 
-    sudo apt install install ufw                                                
+    #sudo apt install install ufw                                                
 
   # Puertos Especificos
     sudo ufw limit 22/tcp                                                                       # Limita las coneccions por puerto 22 ssh 
@@ -16,7 +16,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt install ufw clamav clamav-dae
 
 # Anti Virus
 
-    sudo apt install clamav -y && sudo apt install clamav-daemon -y
+    #sudo apt install clamav -y && sudo apt install clamav-daemon -y
 
     sudo systemctl stop clamav-freshclam                                                       # Detener el servicio de actualización de ClamAV
     sudo freshclam                                                                             # Actualizar la base de datos de firmas de virus de ClamAV
