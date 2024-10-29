@@ -49,3 +49,4 @@ cd / && cd root && nano .zshrc
 #   zsh-syntax-highlighting
 #   zsh-autosuggestions)
 
+#funciona correctamente 27-10-24

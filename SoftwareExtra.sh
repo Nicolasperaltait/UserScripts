@@ -42,6 +42,24 @@ curl -sS https://download.spotify.com/debian/pubkey_6224F9941A8AA6D1.gpg | sudo 
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list &&
 sudo apt-get update && sudo apt-get install spotify-client
 
+#======================================================================================================#
+#GOOGLE CHROME  // Falla el 2 en zsh ir a bash 
+
+curl -fSsL https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmor | sudo tee /usr/share/keyrings/google-chrome.gpg >> /dev/null
+echo deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main | sudo tee /etc/apt/sources.list.d/google-chrome.list
+sudo apt update
+sudo apt install google-chrome-stable -y
+
+#======================================================================================================#
+#AnyDesk
+
+
+wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+
+echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+
+apt update & apt install anydesk
+
 
 #=======================================================================================================#
 
@@ -58,23 +76,3 @@ sudo apt install ffmpeg libsdl2-2.0-0 adb wget \
 git clone https://github.com/Genymobile/scrcpy
 cd scrcpy &&
 sudo ./install_release.sh
-
-#======================================================================================================#
-
-
-#Falla el 2 en zsh ir a bash 
-
-curl -fSsL https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmor | sudo tee /usr/share/keyrings/google-chrome.gpg >> /dev/null
-echo deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main | sudo tee /etc/apt/sources.list.d/google-chrome.list
-sudo apt update
-sudo apt install google-chrome-stable
-
-#======================================================================================================#
-#AnyDesk
-
-
-wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
-
-echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
-
-apt update & apt install anydesk
