@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#=======================================================================================================#
+
 ## Libre Wolf
 
 sudo apt update && sudo apt install -y wget gnupg lsb-release apt-transport-https ca-certificates
