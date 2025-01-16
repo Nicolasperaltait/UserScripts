@@ -54,4 +54,4 @@ cd / && cd root && nano .zshrc
 
 # chsh -s $(which zsh) 
 
-#funciona correctamente 27-10-24
+#funciona correctamente 16 1 2025 
