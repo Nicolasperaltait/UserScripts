@@ -14,7 +14,7 @@ apt install ufw clamav clamav-daemon git wget curl zsh htop preload -y &&
 
 # Puertos Especificos
     sudo ufw limit 22/tcp                                               # Limita las coneccions por puerto 22 ssh 
-
+    
   # Reglas Generales
     sudo ufw default deny incoming
     sudo ufw default allow outgoing
@@ -48,5 +48,10 @@ cd / && cd root && nano .zshrc
 #   sudo
 #   zsh-syntax-highlighting
 #   zsh-autosuggestions)
+
+
+#Run to make default 
+
+# chsh -s $(which zsh)
 
 #funciona correctamente 27-10-24
