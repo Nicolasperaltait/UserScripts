@@ -52,6 +52,6 @@ cd / && cd root && nano .zshrc
 
 #Run to make default 
 
-# chsh -s $(which zsh)
+# chsh -s $(which zsh) 
 
 #funciona correctamente 27-10-24
