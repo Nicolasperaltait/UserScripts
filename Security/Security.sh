@@ -1,13 +1,13 @@
 #!/bin/bash
 sudo apt update && sudo apt upgrade -y && sudo apt install ufw clamav clamav-daemon -y
 
-#  Firewall 
-    #sudo apt install install ufw                                                
+#  Firewall Setup                                            
 
   # Puertos Especificos
-    sudo ufw limit 22/tcp                                                                       # Limita las coneccions por puerto 22 ssh 
+    sudo ufw limit 22/tcp                                                                    # Limita las coneccions por puerto 22 - ssh 
+    sudo ufw allow 3306                                                                      # Puerto MySQL                    
+    sudo ufw allow 8006                                                                      # Puerto Proxmox
 
-  # Reglas Generales
     sudo ufw default deny incoming
     sudo ufw default allow outgoing
 
