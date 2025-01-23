@@ -35,9 +35,14 @@ apt install ufw clamav clamav-daemon git wget curl zsh htop preload nala neofetc
 echo "y" | sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 
-# Plugins Zsh
+
+# Run To make ZSH default shell
 
 chsh -s $(which zsh) &&
+
+# Plugins Zsh
+
+
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions &&
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -45,14 +50,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 #add to the .zhhrc in plugins part whitout #
 
 
-#   plugins=(git
-#   sudo
-#   zsh-syntax-highlighting
-#   zsh-autosuggestions)
+            #   plugins=(git
+            #   sudo
+            #   zsh-syntax-highlighting
+            #   zsh-autosuggestions)
 
 
-#Run to make default 
-
-# chsh -s $(which zsh) 
 
 #funciona correctamente 
