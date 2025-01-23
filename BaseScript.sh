@@ -5,7 +5,7 @@ echo "you need to be root"
  
 apt update && apt upgrade -y
 apt-get install sudo &&
-sudo usermod -a -G sudo nicolas
+#sudo usermod -a -G sudo nicolas
 
 #Basics Instalation
 apt install ufw clamav clamav-daemon git wget curl zsh htop preload nala neofetch -y &&
@@ -37,13 +37,13 @@ echo "y" | sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/oh
 
 # Plugins Zsh
 
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-cd / && cd root && nano .zshrc
+chsh -s $(which zsh) &&
 
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions &&
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 #add to the .zhhrc in plugins part whitout #
+
 
 #   plugins=(git
 #   sudo
@@ -55,4 +55,4 @@ cd / && cd root && nano .zshrc
 
 # chsh -s $(which zsh) 
 
-#funciona correctamente 16 1 2025 
+#funciona correctamente 
