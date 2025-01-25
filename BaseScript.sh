@@ -1,3 +1,9 @@
+#Script Created by Nicolas Peralta
+#Date: 2021-09-15
+#Last Update: 2025-01-25 - 18:38hs
+
+
+
 #!/bin/bash
 echo "you need to be root"
 
@@ -34,18 +40,17 @@ apt install ufw clamav clamav-daemon git wget curl zsh htop preload nala neofetc
 
 echo "y" | sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-
-
 # Run To make ZSH default shell
 
 chsh -s $(which zsh) &&
 
 # Plugins Zsh
 
-
-
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions &&
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting &&
+
+cd / && cd root && nano .zshrc
+
 
 #add to the .zhhrc in plugins part whitout #
 
@@ -54,7 +59,3 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
             #   sudo
             #   zsh-syntax-highlighting
             #   zsh-autosuggestions)
-
-
-
-#funciona correctamente 

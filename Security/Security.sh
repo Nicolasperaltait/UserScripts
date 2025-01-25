@@ -7,6 +7,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt install ufw clamav clamav-dae
     sudo ufw limit 22/tcp                                                                    # Limita las coneccions por puerto 22 - ssh 
     sudo ufw allow 3306                                                                      # Puerto MySQL                    
     sudo ufw allow 8006                                                                      # Puerto Proxmox
+    sudo ufw allow 3389                                                                      # Puerto RDP
 
     sudo ufw default deny incoming
     sudo ufw default allow outgoing
