@@ -29,7 +29,7 @@ apt install ufw clamav clamav-daemon git wget curl zsh htop preload nala neofetc
     sudo ufw default allow outgoing
 
   #habilitacion
-    sudo ufw enable                                                     # Habilitar UFW para gestionar el firewall
+    sudo ufw enable -y                                                  # Habilitar UFW para gestionar el firewall
 
 # AV setup
 
