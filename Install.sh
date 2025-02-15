@@ -5,6 +5,8 @@ mkdir -p github && cd github
 
 git clone https://github.com/Nicolasperaltait/UserScripts.git
 
-cd UserScripts && chmod 775 *.sh 
+cd UserScripts 
 
-install.sh
+chmod 775 *.sh 
+
+./BaseScript.sh
