@@ -51,7 +51,7 @@ chsh -s $(which zsh) &&
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions &&
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting &&
 
-cd / && cd root && nano .zshrc
+# cd / && cd root && nano .zshrc
 
 
 # Verifica si la línea plugins=(git está sola en el .zshrc de root y la reemplaza por la lista completa de plugins
