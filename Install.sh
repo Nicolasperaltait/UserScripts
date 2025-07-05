@@ -7,6 +7,6 @@ git clone https://github.com/Nicolasperaltait/UserScripts.git
 
 cd UserScripts 
 
-chmod 775 *.sh 
+chmod -R  775 *.sh 
 
 ./BaseScript.sh
