@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /home/nicolas
+
 sudo apt update
 
 sudo apt install zsh curl git  -y
@@ -15,3 +17,4 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 nano ~/.zshrc
 
 
+# ejecutar como ususario. 
