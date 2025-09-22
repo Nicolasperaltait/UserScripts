@@ -2,8 +2,6 @@
 #Date: 2021-09-15
 #Last Update: 2025-01-25 - 18:38hs
 
-
-
 #!/bin/bash
 echo "you need to be root"
 
