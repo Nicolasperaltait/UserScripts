@@ -7,14 +7,12 @@
 #!/bin/bash
 echo "you need to be root"
 
-# Inicial Script For servers startup // need to ve root and bash 
- 
+# Inicial Script For servers startup // need to ve root and bash  
 apt update && apt upgrade -y
-apt-get install sudo &&
-#sudo usermod -a -G sudo nicolas
+apt-get install sudo && sudo usermod -aG sudo
 
 #Basics Instalation
-apt install ufw clamav clamav-daemon git wget curl zsh htop preload nala neofetch font-manager nala -y &&
+apt install ufw clamav clamav-daemon git wget curl zsh htop preload nala neofetch font-manager nala -y
 
 # Firewall setups
 

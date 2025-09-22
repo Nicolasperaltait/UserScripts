@@ -1,5 +1,5 @@
 #!/bin/bash
-apt update && apt upgrade -y && apt install sudo git -y 
+sudo apt  update && sudo apt  upgrade -y && sudo apt  install sudo git -y 
 
 mkdir -p github && cd github
 
