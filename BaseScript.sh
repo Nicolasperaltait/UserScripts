@@ -12,7 +12,7 @@ apt update && apt upgrade -y
 apt-get install sudo && sudo usermod -aG sudo
 
 #Basics Instalation
-apt install ufw clamav clamav-daemon git wget curl zsh htop preload nala neofetch font-manager nala -y
+apt install ufw clamav clamav-daemon git wget curl zsh htop preload nala font-manager nala -y
 
 # Firewall setups
 
