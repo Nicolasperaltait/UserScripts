@@ -6,7 +6,7 @@
 echo "you need to be root"
 
 # Inicial Script For servers startup // need to ve root and bash  
-apt update && apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 apt-get install sudo && sudo usermod -aG sudo
 
 #Basics Instalation
