@@ -3,33 +3,32 @@
 #Last Update: 2025-01-25 - 18:38hs
 
 #!/bin/bash
-echo "you need to be root"
 
-# Inicial Script For servers startup // need to ve root and bash  
 sudo apt update && sudo apt upgrade -y
 apt-get install sudo && sudo usermod -aG sudo
 
-#Basics Instalation
-apt install ufw clamav clamav-daemon git wget curl zsh htop preload nala font-manager nala -y
+sudo apt update && sudo apt upgrade -y && sudo apt install ufw clamav clamav-daemon -y
+sudo systemctl disable --now avahi-daemon.service avahi-daemon.socket
 
-# Firewall setups
+#  Firewall Setup
 
-# Puertos Especificos
-    sudo ufw limit 22/tcp  # Limita las coneccions por puerto 22 ssh
-    sudo ufw allow 8006    # Permite el acceso al puerto 8006 usado por proxmox                                          
-    sudo ufw allow 3306    # Permite el acceso al puerto 3306 usado por MySQL
-    sudo ufw allow 3389    # Permite el acceso al puerto 3389 usado por RDP
-    
-  # Reglas Generales
     sudo ufw default deny incoming
     sudo ufw default allow outgoing
+    sudo ufw limit 22/tcp comment 'SSH con limitación'
+    sudo ufw limit 3389/tcp comment 'RDP con limitación'
 
-  #habilitacion
-    sudo ufw enable                                                  # Habilitar UFW para gestionar el firewall
+# Puertos Especificos
+    #sudo ufw allow 3306                                                                      # Puerto MySQL                    
+    #sudo ufw allow 8006                                                                      # Puerto Proxmox
+    #sudo ufw allow 3389                                                                      # Puerto RDP
 
-# AV setup
+# Habilitacion
+    sudo ufw enable                                                                             # Habilitar UFW para gestionar el firewall
+    sudo ufw reload
 
-    sudo systemctl stop clamav-freshclam                                # Detener el servicio de actualización de ClamAV
-    sudo freshclam                                                      # Actualizar la base de datos de firmas de virus de ClamAV
-    sudo systemctl start clamav-freshclam                               # Iniciar de nuevo el servicio de actualización de ClamAV
-    sudo systemctl start clamav-daemon                                  # Iniciar de nuevo el daemon de actualización de ClamAV
+# Anti Virus
+    sudo systemctl stop clamav-freshclam                                                       # Detener el servicio de actualización de ClamAV
+    sudo freshclam                                                                             # Actualizar la base de datos de firmas de virus de ClamAV
+    sudo systemctl start clamav-freshclam                                                      # Iniciar de nuevo el servicio de actualización de ClamAV
+    sudo systemctl start clamav-daemon                                                         # Habilitar UFW para gestionar el firewall
+
