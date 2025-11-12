@@ -31,6 +31,16 @@ echo " --------------- AV scan --------------- "
       echo "Operación cancelada."                                # Mensaje en caso de cancelación
     fi
 
+
+# Escaneo completo. 
+
+sudo freshclam
+sudo clamscan -r --bell -i /home/nicolas /tmp /etc /usr/local
+sudo rkhunter --update && sudo rkhunter --check
+
+
+
+
 #echo " --------------- BKP Configs - Esto puede tardar un tiempo --------------- "
 
 
