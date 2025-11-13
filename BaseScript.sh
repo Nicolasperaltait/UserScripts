@@ -5,17 +5,17 @@
 #!/bin/bash
 # Inicial Script For servers startup // need to ve root and bash  
 sudo apt update && sudo apt upgrade -y
-apt-get install sudo && sudo usermod -aG sudo
+apt-get install sudo && sudo usermod -aG sudo nicolas
 
 #Basics Instalation
-apt install ufw clamav clamav-daemon git wget curl zsh htop preload nala fastfetch -y
+sudo apt install ufw clamav clamav-daemon git wget curl zsh htop preload nala fastfetch -y
 
 # Firewall setups
 
 # Puertos Especificos
-    sudo ufw allow 8006    # Permite el acceso al puerto 8006 usado por proxmox                                          
-    sudo ufw allow 3306    # Permite el acceso al puerto 3306 usado por MySQL
-    sudo ufw allow 3389    # Permite el acceso al puerto 3389 usado por RDP
+    #sudo ufw allow 8006    # Permite el acceso al puerto 8006 usado por proxmox                                          
+    #sudo ufw allow 3306    # Permite el acceso al puerto 3306 usado por MySQL
+    #sudo ufw allow 3389    # Permite el acceso al puerto 3389 usado por RDP
     sudo ufw limit 22/tcp  # Limita las coneccions por puerto 22 ssh
   # Reglas Generales
     sudo ufw default deny incoming
