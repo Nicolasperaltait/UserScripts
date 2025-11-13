@@ -25,3 +25,6 @@ sudo ufw limit 3389/tcp comment 'RDP con limitación'
     sudo freshclam                                                                             # Actualizar la base de datos de firmas de virus de ClamAV
     sudo systemctl start clamav-freshclam                                                      # Iniciar de nuevo el servicio de actualización de ClamAV
     sudo systemctl start clamav-daemon                                                         # Habilitar y iniciar el servicio de ClamAV
+
+
+#TEST
