@@ -1,5 +1,7 @@
 #!/bin/bash
-sudo apt update && sudo apt upgrade -y && sudo apt install sudo git -y 
+
+
+apt update && sudo apt install sudo git -y 
 
 mkdir -p github && cd github
 
@@ -9,4 +11,4 @@ cd UserScripts
 
 chmod -R  775 *.sh 
 
-./BaseScript.sh
+bash base.sh
