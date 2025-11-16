@@ -26,7 +26,6 @@ sudo apt install -y \
   fonts-freefont-ttf \
   fonts-cantarell \
   fonts-droid-fallback \
-  fonts-ubuntu \
   fonts-roboto \
   fonts-firacode \
   fonts-hack-ttf \
