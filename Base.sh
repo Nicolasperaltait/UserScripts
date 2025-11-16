@@ -12,7 +12,7 @@ apt-get install sudo && sudo usermod -aG sudo nicolas
 sudo apt install ufw clamav clamav-daemon git wget curl zsh htop preload nala fastfetch -y
 
 # Permite acceso a OMV desde el explorador de archivos (Thunar)
-sudo apt install gvfs-backends gvfs-fuse -y
+sudo apt install gvfs-backends gvfs-fuse smbclient -y
 
 # Deshabilitar Avahi
 sudo systemctl disable --now avahi-daemon.service avahi-daemon.socket

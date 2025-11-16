@@ -1,5 +1,4 @@
 #!/bin/bash
-su - && apt install sudo
 sudo apt update && sudo apt upgrade -y && 
 sudo apt install xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils -y
 
