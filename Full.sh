@@ -1,5 +1,3 @@
-#Script Created by Nicolas Peralta
-
 #!/bin/bash
 
 # Basics Instalation (tu versión completa)

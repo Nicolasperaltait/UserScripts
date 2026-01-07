@@ -37,9 +37,6 @@ sudo apt install -y \
   fonts-open-sans \
   fonts-powerline
 
-echo "=== Instalando fuentes de Microsoft (EULA) ==="
-sudo apt install -y ttf-mscorefonts-installer || echo "⚠️  Paquete no disponible, revisa los repositorios 'contrib' habilitados."
-
 echo "=== Descargando Nerd Fonts populares ==="
 FONT_DIR="$HOME/.local/share/fonts/nerdfonts"
 mkdir -p "$FONT_DIR"
